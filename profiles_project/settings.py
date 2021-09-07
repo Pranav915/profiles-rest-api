@@ -28,6 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'evening-earth-24227.herokuapp.com',
+    'localhost'
 ]
 
 
