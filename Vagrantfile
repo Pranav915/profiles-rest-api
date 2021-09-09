@@ -28,5 +28,9 @@ Vagrant.configure("2") do |config|
       echo "# PYTHON_ALIAS_ADDED" >> /home/vagrant/.bash_aliases
       echo "alias python='python3'" >> /home/vagrant/.bash_aliases
     fi
+
+    # Install PostgreSQL
+    sudo apt-get install -y postgresql postgresql-contrib  
+
   SHELL
  end
