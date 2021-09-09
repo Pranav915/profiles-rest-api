@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
+import django_heroku
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -87,10 +88,10 @@ WSGI_APPLICATION = 'profiles_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'profilesApi',
-        'USER': 'pranav',
-        'PASSWORD': 'Pranav321',
-        'HOST': 'localhost',
+        'NAME': 'dfvtgsc76ddid7',
+        'USER': 'aqzktamxhigrhu',
+        'PASSWORD': 'b5b6d8e7900b52eec4531d60c331eabad7a192caa53173fac26a04434685e9f7',
+        'HOST': 'ec2-52-214-178-113.eu-west-1.compute.amazonaws.com',
         'PORT': '5432',
     }
 }
@@ -134,6 +135,7 @@ USE_TZ = True
 
 STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 STATIC_URL = '/static/'
+django_heroku.settings(locals())
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
